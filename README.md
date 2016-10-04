@@ -58,8 +58,7 @@
 
 |Bad :(                     |Good!                       |
 |---------------------------|----------------------------|
-|getOpportunities           |                            |
-|obtainWonOpportunityList   |                            |
+|getOpportunities           | obtainWonOpportunityList   |
 
 
 ## 4. Constants naming
