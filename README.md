@@ -77,3 +77,37 @@ SELECT Id, Name, Custom_Field__c
  WHERE Name != null
 ```
 
+## 6. Comments
+
+All methods must have a comment. Depending on the number of lines of code within a method comment as much as possible. Note that someone else will be maintaining the code. Use Javadoc commenting style (http://www.oracle.com/technetwork/java/javase/documentation/index-137868.
+html) which can then be consumed by ApexDocs (https://gitlab.com/StevenWCox/sfapexdoc) to generate documentation easily.
+
+``` java
+// Classes should be commented as follows:
+/**
+* Description of class
+* 1.0 Name DD/MM/YYYY Description
+*
+* @author yourname
+* @date 02/08/2013
+*
+*/
+public class SomeClass {
+    // Methods should be commented as follows:
+    /**
+    * Descriptionoffunction
+    * @author YourName
+    * @date 11/27/2012
+    * @param param1: Description of param1
+    * @param param2: Description of param2
+    * @see AnotherClass
+    * @return void
+    */
+    public static void someFunction(
+        String param1,
+        String param2
+    ){
+        // Method body goes here..
+    }
+}
+```
